@@ -1,0 +1,18 @@
+npm install @expo/vector-icons
+npm install axios
+
+
+React Native + Expo
+
+O EXPO TEM UM SERVIÇO CHAMADO EAS
+Enterprise Application Services
+
+npm install eas-cli -g
+eas login
+
+eas init
+eas update --branch preview --message "Atualizando"
+
+
+eas build --platform android
+eas build --platform ios

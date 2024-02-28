@@ -1,0 +1,54 @@
+MODULO: 
+ - NODEJS
+
+OBJETIVOS:
+ - PAGINACAO
+ - BUSCA
+ - VALIDACAO
+ - UPLOAD DE IMAGEM
+ - ENVIO DE EMAIL
+ 
+
+ENVIANDO EMAIL COM NODE:
+
+https://www.npmjs.com/package/nodemailer
+
+
+LINK: ORMS:
+ - https://www.prisma.io/
+ - https://sequelize.org/
+ 
+
+CONTEUDO:
+ - NPM INIT
+ - PACKAGE.JSON
+ - NPM INSTALL EXPRESS
+ - NPM INSTALL MYSQL
+ - CRUD
+ - CONEXAO COM BANCO DE DADOS
+ - SQL = INSERT, SELECT, UPDATE E DELETES
+ - INSOMNIA
+
+ESTUDAR:
+- NODEJS
+- EXPRESS
+- MYSQLJS
+
+
+COMANDOS UTILIZADOS:
+- npm init
+- npm i express
+- npm i mysql
+- callback
+
+
+npm i mysql-async-simple
+
+
+NODEMON
+npm i
+npm i nodemon
+npm start
+
+BIBLIOTECA DE WEB TOKEN - 
+npm install jsonwebtoken

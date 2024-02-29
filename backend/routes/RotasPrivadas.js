@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import ProdutosRoutes from './ProdutosRoutes.js';
 import UsuariosRoutes from './UsuariosRoutes.js';
 import apiKey from '../config/apiKey.js';
+import ClientesRoutes from './ClientesRoutes.js';
 
 const RotasPrivadas = express.Router();
 
@@ -16,7 +17,7 @@ RotasPrivadas.use(function(request, response, next) {
         return response.json({
             autorizacao: false,
             mensagem: 'Token inválido'
-        });
+        }, 401);
     }
     next();
 })
@@ -24,5 +25,6 @@ RotasPrivadas.use(function(request, response, next) {
 
 RotasPrivadas.use(ProdutosRoutes);
 RotasPrivadas.use(UsuariosRoutes);
+RotasPrivadas.use(ClientesRoutes);
 
 export default RotasPrivadas;

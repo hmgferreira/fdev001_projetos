@@ -5,6 +5,19 @@ const Api = axios.create({
     baseURL: 'http://localhost:8000/'
 })
 
+
+Api.interceptors.response.use(function (response) {
+    return response;
+}, function (error) {
+    
+    if(error.response.status === 401) {
+        // Util.removeToken();
+        // window.location.href = '/';
+    }
+
+    return Promise.reject(error);
+});
+
 async function getToken() {
     const token = await Util.getToken();
     Api.defaults.headers.token = token;

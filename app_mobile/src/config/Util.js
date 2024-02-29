@@ -31,7 +31,7 @@ const Util = {
             ]);
         }
     },
-    removeItem: async () => {
+    removeToken: async () => {
         try {
             await AsyncStorage.removeItem('token@projetoApp');
         } catch (e) {
